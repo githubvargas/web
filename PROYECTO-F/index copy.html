@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Método de Pago</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color:  #394cf4;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #b8eefd;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+main {
+
+    margin: 0%;
+    padding: 5%;
+    background: linear-gradient(#f1f4ff, hsl(225, 100%, 99%));
+ } 
+ main{
+     text-align: center;
+ }
+main section img{
+     width: 150px;
+     height: 150px;
+    align-content: center;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-method {
+    text-align: center;
+    cursor: pointer;
+}
+
+.payment-method img {
+    width: 100px;
+    height: left;
+    margin-bottom: 1px;
+}
+
+.payment-method p {
+    margin: 0;
+}
+footer {
+    background-color: #394cf4;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0%;
+    padding: 0%;
+}
+    </style>
+</head>
+<body>
+    
+    </nav>
+    <main>
+        <section>
+            <article>
+                <header>
+                    <h1>Te Damos Una Calurosa Bienvenida</h1>
+                </header>
+                <Nav>
+                    <ul>
+                        <li><a href="http://127.0.0.1:5500/catalogo.html">catalogo</a></li>
+                        <li><a href="http://127.0.0.1:5500/promociones.html">promociones</a></li>
+                        <li><a href="http://127.0.0.1:5500/pagos.html">pagos</a></li>
+                        <li><a href="http://127.0.0.1:5500/envios.html">envios</a></li>
+                        <li><a href="http://127.0.0.1:5500/calificaciones.html">calificaciones</a></li>
+                        <li><a href="http://127.0.0.1:5500/politicas.html">politicas</a></li>
+                        <li><a href="http://localhost/ven-mas-php/login.php">Dashboard</a></li>
+                        <li><a href="login.html" style="float:right">salir</a></li>
+                    </ul>
+                </nav>
+                <h1>Metodos De Pago</h1>
+                <img src="https://www.ferrersport.com/sites/default/files/productos/complementos/2019/SC3151-100-PHSFZ001-2000.jpeg" alt="">
+               <P>¡en este espacio podrás realizar el pago de tus productos aceptamos, tarjeta de crédito, cuentas nequi y daviplata! para ello selecciona el método que deseas,  diligenciando los datos requeridos para poder realizar el pago correspondiente del producto seleccionado.</P>
+                <div class="container">
+                    <h1>Seleccionar Método de Pago</h1>
+                    <div id="payment-methods" class="payment-methods">
+                        <div class="payment-method" id="credit-card" onclick="selectPaymentMethod('credit-card')">
+                            <img src="https://th.bing.com/th/id/R.baec620f78e68016fb6037ae95a5251e?rik=WE8%2f1bYlS3F4Vg&riu=http%3a%2f%2fcomofuncionaque.com%2fwp-content%2fuploads%2f2015%2f10%2ftarjetas-de-credito1.jpg&ehk=j%2fUstR%2bUtcUOoLn5Fwsil72XINSlbZTeZ3UWXOqsOj8%3d&risl=&pid=ImgRaw&r=0" alt="Tarjeta de Crédito">
+                            <p><a href="https://www.bing.com/ck/a?!&&p=db8fe6bbed5802b3JmltdHM9MTcxMTY3MDQwMCZpZ3VpZD0wNTY2Yzk2Zi1kMGM4LTYzNzYtMGM0Ni1kYTNmZDE2NzYyMjcmaW5zaWQ9NTIwNA&ptn=3&ver=2&hsh=3&fclid=0566c96f-d0c8-6376-0c46-da3fd1676227&psq=tarjeta+de+cr%c3%a9dito&u=a1aHR0cHM6Ly93d3cuYmFuY29sb21iaWEuY29tL3BlcnNvbmFzL3RhcmpldGFzLWRlLWNyZWRpdG8&ntb=1">Tarjeta de credito</a></p>
+                        </div>
+           
+                        <div class="payment-method" id="credit-card" onclick="selectPaymentMethod('Cuenta Nequi')">
+                            <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/b8c82254274985.Y3JvcCw4MzYsNjU0LDAsOTA.png"alt="Nequi">
+                            <p><a href="https://www.nequi.com.co/">Nequi</a></p>    
+                        </div>
+           
+                        <div class="payment-method" id="credit-card" onclick="selectPaymentMethod('Cuenta Daviplata')">
+                            <img src="https://th.bing.com/th/id/R.5acaf50ebc96a8ee8c728589dc56f0ed?rik=n7N0MzpfYfzLag&pid=ImgRaw&r=0" alt="Daviplata">
+                            <p><a href="https://sunegocio.daviplata.com/es/user/login">Daviplata</a></p>
+                        </div>
+                    </div>
+                    <p id="selected-payment"></p>
+                </div>
+                <P>¡Gracias Por Preferirnos!</P>
+                <footer>
+                    <p>Derechos de autor © 2024 Mi Página Web. Todos los derechos reservados.</p>
+                </footer>
+            </article>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
