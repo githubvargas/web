@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesorías</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+*body {
+    font-family: Arial, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(#faefff, hsl(0, 0%, 100%));
+}
+header {
+    background-color:  #394cf4;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+nav {
+    background-color:#b8eefd;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    color: #b8eefd;
+    text-decoration: none;
+}
+main {
+    margin: 0%;
+    padding: 1%;
+    background: linear-gradient(#fefeff, hsl(228, 100%, 99%));
+}
+main{
+text-align: center;
+}
+.container{
+    text-align: center;
+}
+.container {
+    max-width: 650px;
+    margin: 250px;
+    padding: 125px;
+    background-color: #f1b4fd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.advisor-box {
+    border: 10px solid #429aec;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.advisor-box img {
+    display:block;
+    width: 85%;
+    height: 85%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.advisor-box h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.advisor-details {
+    margin-top: 20px;
+}
+
+.advisor-details h2 {
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #394cf4;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+            <article>
+                <header>
+                    <h1>TE DAMOS UNA CALUROSA BIENVENIDA</h1>
+                </header>
+                <Nav>
+                    <ul>
+                        <li><a href="http://127.0.0.1:5500/catalogo.html">catalogo</a></li>
+                        <li><a href="http://127.0.0.1:5500/promociones.html">promociones</a></li>
+                        <li><a href="http://127.0.0.1:5500/pagos.html">pagos</a></li>
+                        <li><a href="http://127.0.0.1:5500/envios.html">envios</a></li>
+                        <li><a href="http://127.0.0.1:5500/calificaciones.html">calificaciones</a></li>
+                        <li><a href="http://127.0.0.1:5500/politicas.html">politicas</a></li>
+                        <li><a href="http://localhost/ven-mas-php/login.php">Dashboard</a></li>
+                        <li><a href="login.html" style="float:right">salir</a></li>
+                    </ul>
+                </nav>
+              <div class="container">
+                    <h1>Asesorías Disponibles</h1>
+                    <P>AQUI PODRAS ENCONTRAR MAS INFORMACION</P>
+                    <div class="advisor-box" onclick="showadvisordetails('advisor1')">
+                        <img src="https://s3.amazonaws.com/businessinsider.mx/wp-content/uploads/2021/01/15205435/entrevista-videollamada.jpg" alt="advisor 1">
+                        <h2><a href="https://workspace.google.com/intl/es-419/lp/meet/?utm_source=bing&utm_medium=cpc&utm_campaign=latam-co-all-es-dr-bkws-all-all-trial-e-dr-1707806-luac0019605&utm_content=text-ad-none-any-dev_c-cre_-adgp_hybrid%20%7c%20bkws%20-%20exa%20%7c%20txt-meet-kwid_43700073842281248-kwd-78271879941431:loc-43&utm_term=kw_meet-st_meet&gclid=2b1235d01b5c12c59c9753d75f053233&gclsrc=3p.ds">meet</a></h2>
+                    </div>
+                    <div class="advisor-box" onclick="showadvisordetails('advisor2')">
+                       <h2><a href="https://www.bing.com/ck/a?!&&p=38118fbea990c355jmltdhm9mtcxmzkxnjgwmczpz3vpzd0wnty2yzk2zi1kmgm4ltyznzytmgm0ni1kytnmzde2nzyymjcmaw5zawq9ntiwna&ptn=3&ver=2&hsh=3&fclid=0566c96f-d0c8-6376-0c46-da3fd1676227&psq=whatsapp+web&u=a1ahr0chm6ly93zwiud2hhdhnhchauy29tlw&ntb=1">whatsapp</a></h2>
+                    </div>
+                    <div class="advisor-box" onclick="showadvisordetails('advisor3')">
+                        <h2><a href="https://www.bing.com/ck/a?!&&p=d2331ce7fc2f6385jmltdhm9mtcxmty3mdqwmczpz3vpzd0wnty2yzk2zi1kmgm4ltyznzytmgm0ni1kytnmzde2nzyymjcmaw5zawq9nte5na&ptn=3&ver=2&hsh=3&fclid=0566c96f-d0c8-6376-0c46-da3fd1676227&psq=facebook&u=a1ahr0chm6ly9lcy1sys5mywnlym9vay5jb20v&ntb=1">facebook</a></h2>
+                    </div>
+                    <div id="advisor-details" class="advisor-details">
+                        <p>Selecciona una asesoría para ver más detalles.</p>
+                    </div>
+                </div>
+                <footer>
+                    <p>Derechos de autor © 2024 Mi Página Web. Todos los derechos reservados.</p>
+                </footer>
+        </section>
+    </main>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
